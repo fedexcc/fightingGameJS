@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego!</title>
+  </head>
+  <body>
+    <h1>Derrota al enemigo</h1>
+    <div class="container">
+        <div class="row">
+            <h4>Vida del enemigo:</h4>
+        </div>
+        <div class="col-6">
+            <progress id="enemyLifeID" value="100" max="100"></progress>
+        </div>
+        <!--OLD enemyLifeID, BORRAR EN VERSION FINAL SI YA NO NECESITO CODIGO-->
+        <!-- <div class="col-6"> !
+            <div class="progress">!
+               <div id="enemyLifeID" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> !
+           </div>!
+        </div>! -->
+        <!-- *FIN* OLD enemyLifeID, BORRAR EN VERSION FINAL SI YA NO NECESITO CODIGO-->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-3">
+                <img src="./assets/img/Enemigo.png" alt="" style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <img src="./assets/img/Personaje.png" alt="" style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <h4>Vida actual:</h4>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-6">
+                <progress id="myLifeID" value="100" max="100"></progress>
+            </div>
+            <!-- <div class="col-6">
+                <div class="progress">
+                <div id="myLifeID" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <button type="button" class="btn btn-outline-dark btn-group btn-lg" id="atacar" role="group">Atacar</button>
+                    <button type="button" class="btn btn-outline-dark btn-group btn-lg" id="curar" role="group">Curar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p id="combatLog"><b>Registro de combate:</b></p>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-danger">REINICIAR</button>
+            </div>
+        </div>
+    </div>
+    <!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="game.js"></script>
+</body>
+</html>
